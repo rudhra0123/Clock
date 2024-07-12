@@ -1,0 +1,149 @@
+body{
+    width:100%;
+    height:100svh;
+    background-color: rgb(90, 88, 88);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock
+{
+ width:250px;
+ height:250px;
+ border-radius: 50%;
+ background-color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+.center
+{
+    width:1px;
+    height:1px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 81);
+    position: relative;
+}
+.sec
+{
+    width:1px;
+    height: 90px;
+    border-radius:0px 10px;
+    background-color: black;
+    margin-bottom: 86px;
+    animation-name: sec_ani;
+    animation-duration: 60s;
+    transform-origin: bottom;
+    position:absolute;
+    animation-iteration-count: infinite;
+    
+}
+.min
+{
+    width:1.5px;
+    height:60px;
+    background-color: rgb(16, 16, 16);
+    margin-bottom: 58px;
+    border-radius: 0px 10px;
+    animation-name: min_ani;
+    animation-duration:3600s;
+    animation-delay: 60s;
+    transform-origin:bottom;
+    position:absolute;
+}
+.hur
+{
+    width:1.5px;
+    height: 40px;
+    background-color: rgb(14, 12, 12);
+    position: absolute;
+    border-radius: 0px 10px;
+    margin-bottom: 40px;
+    animation-name: hur_ani;
+    animation-duration: 43200s;
+    transform-origin: bottom;
+    animation-iteration-count:infinite;
+    animation-delay:3600s;
+
+    
+}
+@keyframes sec_ani
+{
+    0%
+    {
+        transform: rotate(0deg) translateZ(100px) ;
+    }
+    100%
+    {
+        transform: rotate(360deg)  translateZ(100px);
+    }
+}
+@keyframes min_ani
+{
+    0%
+    {
+        transform: rotate(0deg) translateZ(100px) ;
+    }
+    100%
+    {
+        transform: rotate(360deg)  translateZ(100px);
+    } 
+}
+@keyframes hur_ani
+{
+    0%
+    {
+        transform: rotate(0deg) translateZ(100px) ;
+    }
+    100%
+    {
+        transform: rotate(360deg)  translateZ(100px);
+    }  
+}
+.f3
+{
+    width:20px;
+    height:20px;
+    font-size: 30px;
+    font-weight: 600;
+    /* border:1px solid black;  */
+    margin-left: 220px;
+    position:absolute;
+}
+.f12
+{
+    width:20px;
+    height: 20px;
+    font-size:30px;
+    font-weight: 600;
+    margin-bottom:220px;
+    position:absolute;
+}
+.f9
+{
+    width:20px;
+    height: 20px;
+    font-size:30px;
+    font-weight: 600;
+    margin-right:220px;
+    position:absolute;
+}
+.f6
+{
+    width:20px;
+    height: 20px;
+    font-size:30px;
+    font-weight: 600;
+    margin-top:210px;
+    position:absolute;
+}
+.c
+{
+    width:20px;
+    height: 20px;
+    border-radius:50%;  
+    border:1px solid black;
+    background-color: rgb(74, 71, 71);
+
+}
